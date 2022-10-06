@@ -1,0 +1,60 @@
+.horizontal-navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 3.5em;
+    background-color: red;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    font-weight: 500;
+  }
+  
+  .horizontal-navbar li {
+    display: inline;
+  }
+
+  .horizontal-navbar li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 1em 7%;
+    text-decoration: none;
+  }
+  a {
+    background-color: transparent;
+  }
+
+  .over-image-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+
+    padding: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  
+  hr {
+    height: 10px;
+  }
+
+  .link-img {
+    height: 337.5px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .card-content:hover img {
+    webkit-filter: blur(4px);
+    filter: blur(4px);
+  }
