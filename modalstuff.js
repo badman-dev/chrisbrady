@@ -19,8 +19,10 @@ function openModal(id){
 }
 
 function setModalImage(id) {
-    if (id < 0 || id >= images.length) {
-        return;
+    if (id < 0) {
+        id = images.length - 1;
+    } else if (id >= images.length) {
+        id = 0;
     }
     console.log("set modal image");
     currentImage = id;
