@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="css/modalstuff.css">
     <link rel="stylesheet" href="css/index.css">
 
     <!-- Bootstrap CSS -->
@@ -13,7 +14,6 @@
     <title>Chris Brady - Level Design</title>
     <link rel="icon" type="image/x-icon" href="/images/cbfav_icon.ico">
     
-    <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
@@ -41,6 +41,27 @@
         <div class="album py-5 bg-light">
             <div class="container">
     
+<!-- Trigger the Modal -->
+<img id="myImg" class="modal-image" src="images/oldhabits/screenshots/oldhabitsscreen1.png" alt="Snow" style="width:100%;max-width:300px">
+<img id="myImg" class="modal-image" src="images/oldhabits/screenshots/oldhabitsscreen2.png" alt="Snow" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <div>
+    <img class="modal-content" id="img01">
+    <button class="display-left" id="leftBtn">&#10094;</button>
+    <button class="display-right" id="rightBtn">&#10095;</button>
+  </div>
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
               <div class="row">
                 <div class="col-md-6 page-header" style="padding-bottom: calc(var(--bs-gutter-x));">
                     <h2>Old Habits and Dead Wives</h2>
@@ -73,7 +94,10 @@
     
                 <div class="col-md-6" style="padding-bottom: calc(var(--bs-gutter-x));">
                   <img class="card-img-top link-img" src="images/oldhabits/flowchartmap.png" style="height: auto;">
-                </div>
+                  <figure>
+                    <iframe class="card-img-top link-img width="560" height="315" src="https://www.youtube.com/embed/kU2NNEhpn1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption>Brief demonstration of one of the puzzles in the level.</figcaption>
+                  </figure>                </div>
                 <div class="col-md-6" style="padding-bottom: calc(var(--bs-gutter-x));">
                   <h2>Design and Process</h2>
                   Inspired by the wide-linear mission/objective design of Arkane games like Dishonored, and the creative routing and exploration of FromSoftware games like Dark Souls, I set out to create a full Thief 2 level, from conception to release.
@@ -91,7 +115,7 @@
                   maintain an understanding of where they are. Until the layout was finalized, all playtesting was done without any in-game map to ensure it was not needed.
                   <br/>
                   <h3>Gameplay Design</h3>
-                  Implemented as parts of the layout were completed, gameplay involved stealth interactions with enemy NPCs, using opportunistic navigation tools, treasure collecting, and special objectives.
+                  Implemented as parts of the layout were completed, gameplay involved stealth interactions with enemy NPCs, using opportunistic navigation tools, puzzle solving, treasure collecting, and special objectives.
                   <br/><br/>
                   The difficulty of each area varied depending on the place in relation to objectives, which was integrated contextually into the worldbuilding.
                   <br/><br/>
@@ -103,7 +127,7 @@
                   one Thief fan level designer, three long-time Thief fans, and five players who where completely new to Thief.
                   <br/><br/>
                   Having testers with varying experience gave me access to a wider variety of feedback. Testers were introduced at different stages of 
-                  development to ensure I regularly had players going in blind. I observed every gameplay test and took comprehensive notes.
+                  development to ensure I regularly had players going in blind. I observed every gameplay test and took detailed notes.
                   <br/><br/>
                   Towards the end, I had a several week period of comprehensive QA-testing from several players and bug fixing.
 
@@ -118,7 +142,7 @@
                 <div class="col-md-6" style="padding-bottom: calc(var(--bs-gutter-x));">
                   <figure>
                     <iframe class="card-img-top link-img" width="560" height="315" src="https://www.youtube.com/embed/jBVsuilULzc?start=27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <figcaption>A blind playthrough from a German Thief youtuber.</figcaption>
+                    <figcaption>A full, blind playthrough from a German Thief youtuber.</figcaption>
                   </figure>
 
               </div>
@@ -139,6 +163,7 @@
         </div>
       </footer>
 
+      <script src="modalstuff.js"></script>
 
   </body>
 </html>
