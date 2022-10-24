@@ -5,7 +5,6 @@ var modal = document.getElementById("myModal");
 var img = document.getElementById("myImg");
 var images = document.getElementsByClassName("modal-image");
 var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
 
 var span = document.getElementsByClassName("close")[0];
 
@@ -17,7 +16,6 @@ function openModal(id){
     modal.style.display = "block";
     // modalImg.src = this.src;
     setModalImage(id);
-    captionText.innerHTML = this.alt;
 }
 
 function setModalImage(id) {
