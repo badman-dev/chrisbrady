@@ -9,7 +9,6 @@
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;
     font-weight: 500;
   }
   
@@ -74,3 +73,8 @@
     display: block;
     float: left;
   }
+
+  h3 {
+    font-size: 1.6rem !important;
+  }
+  
