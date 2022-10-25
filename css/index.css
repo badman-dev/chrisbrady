@@ -81,4 +81,12 @@
     transition: 0.3s;
     cursor: pointer;
   }
+
+  .col-md-6 p {
+    margin-bottom: 1.6rem;
+  }
+
+  .smaller-bottom {
+    margin-bottom: .2rem;
+  }
   
