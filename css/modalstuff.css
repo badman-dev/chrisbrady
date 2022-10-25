@@ -5,7 +5,7 @@
     transition: 0.3s;
   } */
   
-  #myImg:hover {opacity: 0.7;}
+  /* #myImg:hover {opacity: 0.7;} */
   
   /* The Modal (background) */
   .modal {
@@ -26,8 +26,9 @@
   .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
     max-width: 80%;
+    max-height: 800px !important;
+    width: auto !important;
   }
 
   .modal div {
