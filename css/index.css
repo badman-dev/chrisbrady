@@ -75,6 +75,10 @@
     font-size: 1.6rem !important;
   }
 
+  h4 {
+    font-size: 1.2rem !important;
+  }
+
   .round-image {
     border-radius: 5px;
     transition: 0.3s;
