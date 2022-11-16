@@ -92,4 +92,11 @@
   .smaller-bottom {
     margin-bottom: .2rem;
   }
+
+  #resume {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
   
