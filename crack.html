@@ -21,7 +21,7 @@
   <body>
     <header>
       <section class="jumbotron text-center">
-        <img class="d-block w-100" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 1em;" src="images/crack/crackbanner.png" alt="First slide">
+        <img class="d-block w-100" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 1em;" src="images/crack/crackbanner.jpg" alt="First slide">
         <a href="https://badman-dev.github.io/chrisbrady/"><h1 style="color: black; display: inline-block; font-size: 3rem;" class="jumbotron-heading">Chris Brady - Level Design</h1></a>
         <ul class="horizontal-navbar">
           <li><a href="index.html">Portfolio</a></li>
@@ -84,8 +84,18 @@
                     <figure>
                       <img class="card-img-top link-img round-image" src="images/crack/crackdiagram.jpg" style="height: auto;">
                     </figure>
+                    <figure>
+                      <img class="card-img-top link-img" src="images/crack/crackgif2.webp" style="height: auto;">
+                    </figure>
+                    <figure>
+                      <img class="card-img-top link-img" src="images/crack/crackgif.webp" style="height: auto;">
+                    </figure>
                 </div>
                 <div class="col-md-6" style="padding-bottom: calc(var(--bs-gutter-x));">
+                  <h2>Design</h2>
+                  <p>Though this project obeys the established tropes that people expect from Quake, I incorporated a lot of design tropes from Fromsoftware games like Dark Souls as both games have similar fundamental rules.</p>
+                  <p>The level was playtested in two rounds by a total of 5 different people. Post-testing adjustments mostly involved tweaking of player resources and enemy encounters, as well as bug fixing.</p>
+                  <p>In order to release this level to an audience that would play it, I took a small amount of time to art pass the level with existing textures from the Quake mapping community.</p>
                   <h2>Layout and Routing</h2>
                   <p>The player navigates the ruins of a civilization floating in and endless sky, which is divided into several regions with distinct traits and gameplay elements. This allows for gameplay to be contextual linked to the environmental theming and world building, even when working with Quake's generally limited mechanics.</p>
                   <p>To the East are the outskirts, a poorly maintained region of crumbling structures and eroded rock. Here, the player fights in more open space and hops between islands to navigate.</p>
@@ -93,10 +103,21 @@
                   <p>Inside the island are the mines, a large hollow illuminated by glowing crystals on the walls, with even have a bit of the city creeping in from above. Here the player fights dimly lit enemies, making the place ripe for an ambush.</p>
                   <p>Atop the island sits the heights, a series of structured separated by crumbled rock. Here, the player fights various enemies spread throughout the rocky space, with the indoor areas having more focus, such as holding extra items or being a locked combat arena finale.</p>
                   <p>Players are not routed through these areas one-and-done, but instead return to some of these areas at different vertical levels, opening up shortcuts and connections between them.</p>
-                  <p>The actual progresssion of a player through the island looks like:<br/><b>Lower Outskirts > Lower City > Mines > Upper Outskirts > Upper City > Heights</b></p>
+                  <p>The actual progression of a player through the island looks like:<br/><b>Lower Outskirts > Lower City > Mines > Upper Outskirts > Upper City > Heights</b></p>
                   <p>Throughout the entire outdoor space of the level, the player can see a large crack above, as if the sky, itself, is ripping open. After the final combat encounter, the player rides a floating platform into the crack to end the level. This creates a clear end goal for the player right at the start, the likes of which is reminded to them throughout.</p>
-                  <p>Quake levels are known for including several secrets, each providing extra items or early access to weapons. This level follows that, but also occassionally utilizes the secrets as opportunities to tease later areas, such as an early secret in the outskirts leading to an elevator ride that takes the players through the center of the mines, barred off by wooden structure.</p>
+                  <p>Quake levels are known for including several secrets, each providing extra items or early access to weapons. This level follows that, but also occasionally utilizes the secrets as opportunities to tease later areas, such as an early secret in the outskirts leading to an elevator ride that takes the players through the center of the mines, barred off by wooden structure.</p>
                   <p>The level also features a treasure hunt style string of secrets involving keyhunting that ends in the player moving floating islands around to create a path to a floating structure that contains a rocket launcher.</p>
+                  <h2>Encounters and Scripting</h2>
+                  <p>Level scripting involved handling enemy spawns as the player approaches areas, moving platforms, and a few sequences that wait for enemies to be killed before more are spawned.</p>
+                  <p>In many encounters, enemies that are weaker or melee focused are put up front, while stronger ranged enemies are placed behind in elevated positions.
+                    This keeps players moving as they need to avoid the projectiles of ranged enemies while they dance around the front enemies. Some fights rely less on these front enemies, and give player adequate cover to push forward and avoid projectiles.</p>
+                  <p>The level is paced so that intense fights are distributed throughout, with quieter bits of fast moving combat in between so that the player is not constantly stressed and even get opportunities to feel powerful.</p>
+                  <p>In the finale, the player is trapped in a round arena where pillars rise from the ground in waves, which ranged enemies spawn on top of while melee enemies chase the player on the ground.
+                    These pillars act as both elevation for ranged enemies to better find the player, as well as growing cover for the player to utilize as each wave surpasses the previous in intensity.
+                    They also server to build tension as the player watches them slowly rise between grounds.</p>
+                  <p>In this finale, each wave brings harder enemies but also a reward of more health and ammo. In the final round, the pillars start occupied by "enforcers", ranged enemies with low health. When the player kills one, it is replaced by a "vore", a punishing enemy that shoots homing explosives at the player and has more health.
+                    The player gets chased by these projectiles, attempting to crash them into the pillars, all still while dealing with new spawns of weak enemies on the ground.
+                  </p>
               </div>
 
             </div>
