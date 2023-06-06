@@ -101,18 +101,14 @@
   }
 
   .section-outline {
-    /* outline: black solid 5px; */
     border-radius: 10px;
     /* border: 5px solid black; */
     background-color: black;
     padding-top: calc( var(--bs-gutter-x));
     margin-bottom: calc( var(--bs-gutter-x));
-    margin-right: calc( var(--bs-gutter-x));
-    margin-left: calc( var(--bs-gutter-x));
   }
 
   .card-img {
-    /* border: 0px solid rgba(0, 0, 0, 0); */
     border: inherit;
   }
   
