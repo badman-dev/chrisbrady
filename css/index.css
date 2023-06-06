@@ -99,4 +99,12 @@
     margin-right: auto;
     width: 40%;
   }
+
+  .section-outline {
+    /* outline: black solid 5px; */
+    border-radius: 25px;
+    border: 5px solid black;
+    padding-top: calc( var(--bs-gutter-x));
+    margin-bottom: calc( var(--bs-gutter-x));
+  }
   
