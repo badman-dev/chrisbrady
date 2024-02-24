@@ -45,11 +45,11 @@
 }
 
 .slider-handle::before {
-  left: -24px;
+  left: -15px;
   border-right: 16px solid #fff;
 }
 
 .slider-handle::after {
-  right: -24px;
+  right: -15px;
   border-left: 16px solid #fff;
 }
