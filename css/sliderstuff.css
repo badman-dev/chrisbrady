@@ -2,8 +2,8 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    height: 0;
-    padding-bottom: 75%; /* Adjust this value according to your image aspect ratio */
+    height: auto;
+    padding-bottom: 56%; /* Adjust this value according to your image aspect ratio */
   }
 
   .slider-before,
