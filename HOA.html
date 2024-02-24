@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="css/sliderstuff.css">
     <link rel="stylesheet" href="css/modalstuff.css">
     <link rel="stylesheet" href="css/index.css">
 
@@ -79,13 +80,23 @@
     
                 <div class="col-md-6" style="padding-bottom: calc(var(--bs-gutter-x));">
                     <figure>
-                      <img class="card-img link-img round-image" src="images/rude/rudeoverview.png" style="height: auto;">
+                      <img class="card-img link-img round-image" src="images/hoa/isometric.jpg" style="height: auto;">
                     </figure>
                     <figure>
-                      <img class="card-img link-img" src="images/rude/rudegif2.gif" style="height: auto;">
+                      <img class="card-img link-img" src="images/hoa/noclip1.jpg" style="height: auto;">
                     </figure>
                     <figure>
-                      <img class="card-img link-img" src="images/rude/rudegif4.gif" style="height: auto;">
+                      <style>
+                        .slider-before, .slider-after {
+                          user-select: none;
+                        }
+                      </style>
+                      
+                      <div class="custom-image-slider" id="customImageSlider">
+                        <img class="slider-before" src="images/hoa/before1b.jpg" alt="Before">
+                        <img class="slider-after" src="images/hoa/before1a.jpg" alt="After">
+                        <div class="slider-handle"></div>
+                      </div>
                     </figure>
                 </div>
                 <div class="col-md-6" style="padding-bottom: calc(var(--bs-gutter-x));">
@@ -142,6 +153,7 @@
       </footer>
 
       <script src="modalstuff.js"></script>
+      <script src="sliderstuff.js"></script>
 
   </body>
 </html>

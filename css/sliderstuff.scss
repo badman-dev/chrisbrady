@@ -1,0 +1,62 @@
+// Fallback values
+:root {
+	--img-l: 'https://images.unsplash.com/photo-1547056961-3c25e9140b05?fit=crop&w=300&&h=400&q=80;';
+	--img-r: 'https://images.unsplash.com/photo-1497250681960-ef046c08a56e?fit=crop&w=300&h=400&q=80';
+	--img-w: 300px;
+	--img-h: 400px;
+}
+
+$thumb-d: 1em;
+
+@mixin track() {
+  width: 100%;
+	height: var(--img-h);
+	background: var(--img-1);
+}
+
+@mixin fill() {
+	height: var(--img-h);
+	background: var(--img-2);
+}
+
+@mixin thumb($m: 0) {
+	border-radius: 0;
+	margin-top: $m;
+	width: $thumb-d;
+	height: var(--img-h);
+  background: #666;
+	cursor: ew-resize
+}
+
+body {
+	background: #000;
+	color: #fff;
+}
+
+[type='range'] {
+	&, &::-webkit-slider-thumb, 
+	&::-webkit-slider-runnable-track {
+		-webkit-appearance: none
+	}
+	
+	--val: 50;
+	--pos: calc(#{.5*$thumb-d} + .01*var(--val)*(100% - #{$thumb-d}));
+	padding: 0;
+	width: var(--img-w);
+	max-width: 100%;
+	height: 2*$thumb-d;
+	min-height: var(--img-h);
+	background: none;
+	cursor: pointer;
+	
+	&::-webkit-slider-runnable-track { @include track() }
+	&::-moz-range-track { @include track() }
+	
+	&::-moz-range-progress { @include fill() }
+	
+	// This passes on magic numbers to just webkit which are used as a margin top
+	&::-webkit-slider-thumb { @include thumb(calc(.5*(var(--img-h) - #{$thumb-d}))) }
+
+	// Firefox gets margin top zero
+	&::-moz-range-thumb { @include thumb() }
+}
