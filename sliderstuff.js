@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const handle = document.querySelector(".slider-handle");
 
     // Set initial handle position and clipPath
-    const initialPercentage = 50;
+    const initialPercentage = 75;
     handle.style.left = `${initialPercentage}%`;
     afterImage.style.clipPath = `inset(0 ${100 - initialPercentage}% 0 0)`;
 

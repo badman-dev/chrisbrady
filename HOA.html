@@ -97,41 +97,42 @@
                         <img class="slider-after" src="images/hoa/before1a.jpg" alt="After">
                         <div class="slider-handle"></div>
                       </div>
+                      <figcaption>What the player sees VS actual playable level geometry.</figcaption>
                     </figure>
                 </div>
                 <div class="col-md-6" style="padding-bottom: calc(var(--bs-gutter-x));">
                   <h2>Design</h2>
-                  <p>For the "surprise" concept of the jam, I created a level built around an initial plot twist that explodes into FPS action. The twist, inspired by the intro to Arkane's Prey, is
+                  <p>For the "surprise" concept of the jam, I created a level built around an initial plot twist that explodes into FPS action. The twist, inspired by the <a href="https://youtu.be/GLExoItBLVc?si=ZsXYk6N49CL3eikE&t=954" target="_blank">intro to Arkane's Prey</a>, is
                     that the fully 3D suburb visible around the player's home is fake, and they are instead being watched through one-way glass by the inhabitants of a massive sci-fi facility.
                   </p>
                   <p>I didn't paper draft the layout prior to implementation, however I did originally plan the level in written format by detailing the sequence of events that the player experiences. 
                   </p>
-                  <p>The level was playtested by three other level designers and another three friends familiar with Half-Life 2. Testers submitted videos that I was able to watch to observe player behavior.
+                  <p>The level was playtested by three other level designers and another three friends familiar with Half-Life 2 over multiple versions. Testers submitted videos that I was able to watch to observe player behavior.
                     The level underwent a wide variety of changes, both big and small, in response to this playtesting.
                   </p>
                   <p>You can see my original plan and testing notes <a href="https://docs.google.com/document/d/1uyDbKHb4RqeuaL7erqvQwgqlDbhmrvGNKcGyVh0COOc/edit?usp=sharing" target="_blank">here</a>.</p>
-                  <h3>Built for Combat</h3>
+                  <h3>Combat and Scripting</h3>
                   <p>Half-Life 2 features robust, systemic NPC enemies. As such, adding appropriate complexity and AI hint nodes to the combat rooms created a level of dynamism that is highly responsive to the player's 
                     moment-to-moment decision making. Enemies take cover, throw grenades, shoot through glass, and attempt to flank the player, to name a few.
                   </p>
-                  <p>In one example of a puzzle, a hole in the ground is covered in wooden boards. Above this is a catwalk storage area that has old appliances such as a fridge and a washing machine. 
-                    In order to enter the hole, players must shatter the wooden boards by pushing one of these heavy objects off the catwalk and sending them crashing through the boards.
+                  <p>Similarly, the player is given a wide variety of combat options. At the start of the first combat encounter, the player has access to a limited but diverse weapon roster, 
+                    including a crowbar, a revolver, and an SMG. Prior to the second encounter in a tighter space, the player obtains a shotgun for satisfying close quarter shooting. 
+                    Prior to the finale, the player obtains the Pulse Rifle, one of the most effective weapons in the game.
                   </p>
-                  <p>As another example, in order to escape and complete the level, players must get a car out of the garage. The garage doors are barred shut by a piece of metal, which works entirely by the game's physics. 
-                    In order to unlock the piece the player needs to obtain the game's signature "gravity gun" to lift the piece of metal and unbar the door.
+                  <p>Weapon pickups occur outside of combat to avoid auto-equip annoyance. The exception is that enemy soldiers will drop grenades as the player progresses.
                   </p>
-                  <p>My original concept for the level was more focused on puzzles and I did some prototyping of this before settling on a version that incorporated Half Life 2's enemies and weapons, 
-                    believing that they added more opportunity for exciting scripting scenarios.</p>
-                  <h3>Scripting</h3>
-                  <p>The level makes heavy use of scripted sequences involving different types of AI. The general goal of using scripted sequences was to introduce enemies into spaces that the player 
-                    was already in, and to create a sense of escalation as the combine raid the house.</p>
-                  <p>The sequences begin with the Combine sending shells full of headcrabs to zombify the rebels,
-                    then continues to them sending in manhack drones to scout the area, before finally sending in the soldiers to clear out what's left.
-                  </p>
-                  <p>Some of the sequences are small scale, like having a headcrab walk a certain path to tease the player, while others are larger scale like enemies ambushing the player by
-                     shooting up windows and breaching rooms by blowing doors off of their hinges.</p>
-                  <p>Outside of what I specifically scripted, the AI have different systemic behaviors, like taking cover or infighting between different factions (combine, zombies, etc.).</p>
-                  <p>There's also some non-AI scripting, such as a bit where the player must restore power in a flooded basement, which in turn electrifies the water, creating a hazard.</p>
+                  <p>Divided into four major combat encounters, each encounter is built around a specific idea. First the player is navigating a multi-leveled warehouse, then
+                    a tight space where the player is empowered by shotguns and grenades, followed by a room where the player must dive into a side room to flank a wall of turrets,
+                    and finishing off with the player returning to the start house, now in the image of a life-sized dollhouse, to fight off enemies busting down doors and flying through windows.</p>
+                  <p>After this final encounter, the player enters through a newly opened door in their basement, gets into a car, and drives through a tunnel into a sprawling, nighttime city.</p>
+                  <p>Bespoke scripting is used to keep each encounter lively, as enemies reveal themselves and ambush the player at specific locations and timings. This also prevents the
+                    scenario in which the player can camp down and clear an encounter from a single location since enemy aggro waits for the player to progress through each room.</p>
+                  <h3>Smoke and Mirrors</h3>
+                  <p>The player begins at their home in an idealized, homogenous suburb, seeing far in every direction. In the attic they uncover a mysterious crawlspace that impossibly leads to a massive science facility.
+                    From this side of things they are shown one-way windows spying on the home from the facility.</p>
+                  <p>This effect was accomplished by exploiting the Source engine's 3D skybox system, which is traditionally used to project an isolated mini-sized section of the level at 16x
+                    size to give a sense of scale within the relatively small level bounds.</p>
+                  <p>In this level, it is used to project a false space and obfuscate the actual level that exists beyond the walls of the skybox.</p>
                 </div>
               </div>
 
