@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/sliderstuff.css">
+    <link rel="stylesheet" href="css/modalstuff.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Chris Brady - Wizard Game</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <header>
+      <section class="jumbotron text-center">
+        <img class="d-block w-100" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 1em;" src="images/hoa/hoabanner.jpg" alt="First slide">
+        <a href="https://badman-dev.github.io/chrisbrady/"><h1 style="color: black; display: inline-block; font-size: 3rem;" class="jumbotron-heading">Chris Brady</h1></a>
+        <ul class="horizontal-navbar">
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+    </section>
+      </header>
+  
+      <main role="main">
+  
+
+
+        <div class="album py-5 bg-light">
+            <div class="container">    
+
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <div>
+                  <img class="modal-content" id="img01">
+                  <button class="display-left" id="leftBtn">&#10094;</button>
+                  <button class="display-right" id="rightBtn">&#10095;</button>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 page-header" style="padding-bottom: calc(var(--bs-gutter-x));">
+                    <h2>Wizard Game</h2>
+                    <h3>Unreal Engine 5 Rogue-Like</h3>
+                    <p><strong>Top Down, Modular, Procedural<br/>1 Month Group Project<br/>Currently Unreleased</strong></p>
+                    <p>Wizard Game is a small rogue-like where player upgrade is centered on a spellcrafting system to reach the end of a procedurally generated dungeon.</p>
+                    <p>I acted as a level designer, level artist, and Blueprint (BP) programmer. Most programming work was handled by my friend <a href="https://archieshortuni.github.io/" target="_blank">Archie Short</a> in C++/BP, though I assisted in BP scripting of level module sequencing, AI behavior, stage hazards, and UI.
+                      Several other members assisted in additional gameplay concepts and provided origianl audio work.</p>
+                    <p>At the time of writing, the game is near finished, though my work, documented here, is completed.
+                      The game was originally planned as an entry for the <a href="https://itch.io/jam/7drl-challenge-2024" target="_blank">7 Day Rogue-Like Jam</a>,
+                      but due to technical hurdles and unexpected team unavailability, the submission deadline was missed.</p>
+                  </div>
+                <div class="col-md-6" style="padding-bottom: calc(var(--bs-gutter-x));">
+                  <iframe class="card-img link-img" style="height: 100%;" width="560" height="315" src="https://www.youtube.com/embed/E3KJpdZsYGA?si=h39aXxOPat34aVq1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-md-12" style="padding-bottom: calc(var(--bs-gutter-x)); margin: auto; max-width: 1296px;">
+                  <img id="myImg" class="modal-image" src="images/hoa/hoa1.jpg" style="height: 318px; width: 318px;">
+                  <img id="myImg" class="modal-image" src="images/hoa/hoa2.jpg" style="height: 318px; width: 318px;">
+                  <img id="myImg" class="modal-image" src="images/hoa/hoa3.jpg" style="height: 318px; width: 318px;">
+                  <img id="myImg" class="modal-image" src="images/hoa/hoa4.jpg" style="height: 318px; width: 318px;">
+                  <img id="myImg" class="modal-image" src="images/hoa/hoa5.jpg" style="height: 318px; width: 318px;">
+                  <img id="myImg" class="modal-image" src="images/hoa/hoa6.jpg" style="height: 318px; width: 318px;">
+                  <img id="myImg" class="modal-image" src="images/hoa/hoa7.jpg" style="height: 318px; width: 318px;">
+                  <img id="myImg" class="modal-image" src="images/hoa/hoa8.jpg" style="height: 318px; width: 318px;">
+                </div>
+    
+                <div class="col-md-6" style="padding-bottom: calc(var(--bs-gutter-x));">
+                    <figure>
+                      <img class="card-img link-img" src="images/hoa/hoagif1.webp" style="height: auto;">
+                      <figcaption>The player discovers they are being watched and eventually returns home.</figcaption>
+                    </figure>
+                    <figure>
+                      <img class="card-img link-img" src="images/hoa/hoagif2.webp" style="height: auto;">
+                      <figcaption>The player thwarts an ambush and clears a path.</figcaption>
+                    </figure>
+                    <figure>
+                      <img class="card-img link-img" src="images/hoa/hoagif3.webp" style="height: auto;">
+                      <figcaption>A carefully thrown grenade clears turrets ahead.</figcaption>
+                    </figure>
+                    <figure>
+                      <img class="card-img link-img" src="images/hoa/hoagif4.webp" style="height: auto;">
+                      <figcaption>The player improvises as new enemies fly into the room.</figcaption>
+                    </figure>
+                    <figure>
+                      <style>
+                        .slider-before, .slider-after {
+                          user-select: none;
+                        }
+                      </style>
+                      
+                      <div class="custom-image-slider" id="customImageSlider">
+                        <img class="slider-before" src="images/hoa/before1b.jpg" alt="Before" style="height: auto;">
+                        <img class="slider-after" src="images/hoa/before1a.jpg" alt="After" style="height: auto;">
+                        <div class="slider-handle"></div>
+                      </div>
+                      <figcaption>What the player sees VS actual playable level geometry.</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-6" style="padding-bottom: calc(var(--bs-gutter-x));">
+                  <h2>Design</h2>
+                  <p>At the start of the project, our group met and decided on our concept for the rogue-like jam. We landed on a fantasy game in which the player is a wizard that advances their existing roster of spells with new modifiers as they go.
+                  </p>
+                  <p>Due to time and workload constraints, the game only features a single "layer" and no boss fight. The player wins by navigating to the end of the procedurally generated level.</p>
+                  <p>You can see our original design plans in a spreadsheet <a href="https://docs.google.com/spreadsheets/d/1D3MzfPnmpuNqFxHYCjc900WU95xzYnwcUMqI1QZoh1k/edit?usp=sharing" target="_blank">here</a>.</p>
+                  <h3>Modular Level Design</h3>
+                    <p>Due to the spacial limitations of rogue-likes, it was especially convenient to utilize a modular kit in creating a large number of rooms with consistent dimensions.
+                    Eager to work with UE5's modeling mode, I created the core modular kit, myself, in-engine. An additional asset-store pack was utilized for set-dressing and additional obstacles.</p>
+                    <p>This core modular kit included pieces representing 2x2 meter spaces of varying heights. The origins of the static meshes were set to facilitate the quickest possible usage during level design.</p>
+                    <p>Level design work involved creating a series of room modules with hazards and enemy spawn points. Each room was designed to be entered from either side in order to squeeze more variation from less rooms.
+                      Due to the large programming workload on this project, a dynamic system for handling occluding walls did not exist and see-through variations of each modular piece were modeled, along with manually created, rotated room variations.
+                    </p>
+                    <p>Enemies spawn in a number of waves and in a quantity depending on the room's size. Smaller rooms get single waves of few enemies while larger rooms get two larger waves. In larger rooms, the first waves included spawns
+                      towards the center of the rooms, where the player would not be in at the start, while second waves spawned towards the exits, assuming that the player had moved into the center space while dodging enemies in the first wave.</p>
+                    <p>Rooms feature additional hazards in the form of death pits and swinging blades. Swinging blades create a rhythmic timing challenge as they are placed on thin platforms the player must dodge through while being chased by enemies.</p>
+                    <p>Rooms with death pits feature small platforms the player can dodge boost over to, like stepping stones. Rooms featuring these also heavily featured ranged enemies in order to discourage players from camping on these islands where melee enemies could not reach.</p>
+                    <p>In the end, I created ? rooms of unique dimension, each featuring several variations that were rotated and featured different door positions, enemy spawns, set dressing, up to a total of ? rooms.</p>
+                    <h3>Blueprint Scripting</h3>
+                    <p>I used UE5's BP system for implementing a number of features into the game, including module sequencing, enemies, hazards, and UI.</p>
+                    <p>I created several modular Actor BPs for handling the module system, in which each module had a manager that would communicate with its entrance/exit doors and enemy spawns,
+                      in order to facilitate multiple waves of enemies. The tool was designed in a way that new room modules can be created with functioning doors and waves by someone with no programming knowledge.
+                    </p>
+                    <p>I scripted two of the enemy types that appear in the game, the heavy and the archer. I utilized UE5's Behavior Trees in tandem with BP scripting in their implementation.
+                      The archer enemy maintains a distance with the player from which they fire arrows, while the heavy will slowly stomp towards the player and throw a teleport spell towards them in order to close distance.</p>
+                    <p>I handled the implementation of the main menu, the pause menu, the restart menu, and the player health bar.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+  
+  
+      </main>
+  
+      <footer class="text-muted">
+        <div class="container">
+          <p class="smaller-bottom">Chris Brady</p>
+          <p class="smaller-bottom">budmandev@gmail.com</p>
+          <p class="smaller-bottom">(937) 232-2634</p>
+          <p class="smaller-bottom">Website created in HTML by myself</p>
+          <br/><br/>
+        </div>
+      </footer>
+
+      <script src="modalstuff.js"></script>
+      <script src="sliderstuff.js"></script>
+
+  </body>
+</html>
