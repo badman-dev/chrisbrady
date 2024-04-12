@@ -21,7 +21,7 @@
   <body>
     <header>
       <section class="jumbotron text-center">
-        <img class="d-block w-100" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 1em;" src="images/bog1/bogbanner.jpg" alt="First slide">
+        <img class="d-block w-100" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 1em;" src="images/space/Skybox1080.png" alt="First slide">
         <a href="https://badman-dev.github.io/chrisbrady/"><h1 style="color: black; display: inline-block; font-size: 3rem;" class="jumbotron-heading">Chris Brady</h1></a>
         <ul class="horizontal-navbar">
           <li><a href="index.html">Portfolio</a></li>
@@ -60,7 +60,7 @@
                     <p>Space Collector is a fully-complete educational WebGL game I developed with four others as part of a class project.</p>
                     <p>Players pilot a space ship across 2D environments and mine asteroids, rewarded with astronomy facts.</p>
                     <p>I acted as project manager, lead level designer, and programmer on this project.</p>
-                    <p>Play on Itch <a href="https://ucgroup19-2024.itch.io/space-collector" target="_blank">here</a></p>
+                    <p>Play a web build on Itch <a href="https://ucgroup19-2024.itch.io/space-collector" target="_blank">here</a></p>
                   </div>
                 <div class="col-md-6" style="padding-bottom: calc(var(--bs-gutter-x));">
                   <iframe class="card-img link-img" style="height: 100%;" width="560" height="315" src="https://www.youtube.com/embed/N7Wj1x-ZV10?si=JA6e6UVElFMK3OeT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -93,13 +93,21 @@
                 </div>
                 <div class="col-md-6" style="padding-bottom: calc(var(--bs-gutter-x));">
                   <h2>Design</h2>
-                  <p>The level follows the story of Bog Man, a brutish man living in the depths of a poison swamp, who rises up to take action against the irritating noises of the industrial hellscape above him.</p>
+                  <p>Core gameplay involves exploring levels and mining special asteroids. When resources are mined, the player is given an astronomy fact and a citation they can use to learn more, as part of the education angle of the game.</p>
+                  <p>The game was deliberately chosen to have low-cost visuals and be a WebGL build in order to make it realistically deployable into a gradeschool classroom.</p>
+                  <p>The game is fine-tuned to be playable to someone with little preexisting game literacy, and is generally non-difficult, though the game becomes more difficult if players attempt to mine as many bonus asteroids as possible.</p>
                   <h2>Level Design</h2>
-                  <p>The player's movement throughout this level is a constant ascension, challenging the player with uphill battles and giving a sense of consistent progress.</p>
+                  <p>I designed three levels for the game, one tutorial level and two full levels. In the full levels, the player is dropped in on the edge of large, open-ended level,
+                    from which they begin exploring for asteroids to mine. Each map has a number of bonus asteroids and one main asteroid that ends the level upon mining.</p>
+                  <p>Due to the open ended nature of the levels, as well as the player's limited view distance, I designed each level to be easily learnable without explicit guidance. Levels are broken up into certain points of
+                    interest, each of which having one or two bonus asteroids contained as reward for exploration. The player has a radar to give them a larger view of the level and identify mineable asteriods from a distance.</p>
+                  <p>The first full level takes place in the asteroid belt, and has the player avoiding physical hazards while searching for mineable asteroids. The second full level takes place in a solar flare, and has the player primarily avoiding invisible radiation.
+                    The radiation is only visualized on the radar, so players have to rely on both their immediate point of view for steering the ship, while relying on the radar for avoiding radiation zones.</p>
                   <h2>Project Management</h2>
-                  <p>This level includes various traditional Quake encounters, involving idle enemies waiting for the player or scripted spawns, but also breaks things up with more uniquely scripted setpieces.</p>
-                  <h2>Playtesting</h2>
-                  <p>This level includes various traditional Quake encounters, involving idle enemies waiting for the player or scripted spawns, but also breaks things up with more uniquely scripted setpieces.</p>
+                  <p>As the project manager on a team of five, I was primarily responsible for running sprints, managing the Git repo, and managing priorities.</p>
+                  <p>I regularly made determinations about priorities in the interest of producing a minimum viable product far before the ultimate due date of the project.
+                    I was successful in this, and the finished game benefitted from a couple of months of polish and iteration based on feedback. Most game projects from other teams submitted for this assignment were unfinished at the time of submission.</p>
+                  <p>Early iteration involved internal playtesting and providing feedback to other group members. In the last few months of the project, we created a playtesting form that we sent to outside examples within our target audience, along with web-hosted builds.</p>
               </div>
 
             </div>
