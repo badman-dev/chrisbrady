@@ -21,7 +21,7 @@
   <body>
     <header>
       <section class="jumbotron text-center">
-        <img class="d-block w-100" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 1em;" src="images/oldhabits/oldhabitsthumb.jpg" alt="First slide">
+        <img class="d-block w-100" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 1em;" src="images/eyeofsea/image1.jpg" alt="First slide">
         <a href="https://badman-dev.github.io/chrisbrady/"><h1 style="color: black; display: inline-block; font-size: 3rem;" class="jumbotron-heading">Chris Brady</h1></a>
         <ul class="horizontal-navbar">
           <li><a href="index.html">Portfolio</a></li>
@@ -61,9 +61,9 @@
                     that encourages careful stealth and creative navigation. Players fill the role of a thief 
                     sent by the mysterious Keepers to find a lost relic in a temple hidden beneath a noble's vacation island home.
                     To the player's surprise, a band of pirates arrived before them and are actively raiding the island, and the player must
-                    prove themselve's the better thief.</p>
+                    prove themselves the better thief.</p>
                     <p>Download <a href="https://drive.google.com/file/d/1fdFOnYwSDMxQ-drXvIgGpIhQIUJMoMKZ/view?usp=sharing" target="_blank">here</a> (Requires a <a href="https://www.ttlg.com/forums/showthread.php?t=149669" target="_blank">NewDark-patched</a> copy of Thief 2. Find more info <a href="https://www.ttlg.com/forums/showthread.php?t=48202" target="_blank">here</a>.).</p>
-                    <p>See player reaction and discussion <a href="https://www.ttlg.com/forums/showthread.php?t=152878&p=2523765#post2523765" target="_blank">here</a>. Player opinion was very positive, with many players appreciating the secret-filled level design, subtle storytelling, and level scripting.</p>
+                    <p>See player reaction and discussion <a href="https://www.ttlg.com/forums/showthread.php?t=152878&p=2523765#post2523765" target="_blank">here</a>. Player opinion was positive, with many players appreciating the secret-filled level design, subtle storytelling, and level scripting.</p>
                   </div>
                   <div class="col-md-6" style="padding-bottom: calc(var(--bs-gutter-x));">
                     <figure>
@@ -96,68 +96,61 @@
                 </div>
                 <div class="col-md-6" style="padding-bottom: calc(var(--bs-gutter-x));">
                   <h2>Design and Process</h2>
-                  <p>Having made one Thief 2 level prior, this was my opportunity to apply all I learned from the get-go.
+                  <p>Having made one <a href="oldhabits.html" target="_blank">Thief 2 level</a> prior, this was my opportunity to apply all I learned from the get-go.
                     Thief 2 is a systems-heavy game who's levels are open-ended, exploration driven and focus on stealth and navigation as primary challenges.
                     More contemporary comparisons include Dishonored, DEATHLOOP, Deus Ex, and Gloomwood.
                   </p>
                   <p>The level is complex, featuring many possible golden paths and a number of extra spaces to explore in the pursuit of side objectives and a better loot score.
-                    It's also dynamic, featuring a two major events that dramatically change the playing field, along with the usual systemic elements of Thief.
+                    It's also dynamic, featuring two major events that dramatically change the playing field, along with the usual systemic elements of Thief.
                   </p>
                   <h3>Layout Design</h3>
                   <p>Before I jumped into the editor I planned the level via text, focusing on objectives and narrative. I then entered a cycle of sketching up layouts and implementing them with gameplay for the three distinct zones one at a time.</p>
-                  <p>Check out a PDF of my paper plans/notes <a href="pdf/oldhabitspaperdrafts.pdf" target="_blank" download>here</a>.</p>
+                  <p>Check out a PDF of my plans and sketches <a href="pdf/eyeofthesea.pdf" target="_blank" download>here</a>.</p>
                   <p>The player begins in the open ended and relatively easy village where they can optionally explore the homes and pirates' ship.</p>
                   <p>Once they find one of several ways into the house, the space becomes tighter, more complex, and heavily patrolled by pirates. The way to the temple is locked and the player can either go to where the key is stated to be or find one of two less obvious routes into the temple.</p>
-                  <p>The temple is tighter and more linear, acting as a challenging choke point for stealth. Once the player obtains the Eye, a new form of enemy, ghosts, appear and the player must backtrack through a more hostile version of familiar territory.
+                  <p>The temple is tighter and more linear, acting as a challenging choke point for stealth. Once the player obtains the Eye, a new form of enemy appear and the player must backtrack through a more hostile version of familiar territory.
                   </p>
                   <p>The level offers players a number of subversive routes that help the player navigate the space undetected. They include, but aren't limited to, secret doors behind bookshelves and paintings, hidden gaps in walls, attics, and open windows.
                     These reinforce the stealth fantasy and are a compelling reward for exploration.</p>
                   <p>The level is strongly imageable, utilizing asymmetry and distinct zones to help players build a strong memory of the complex space. To ensure imageability, all but the last round of playtesting was done without any in-game map for reference.</p>
                   <h3>Gameplay Design</h3>
                   <p>Implemented as parts of the layout were completed, gameplay involved stealth interactions with enemy NPCs, using opportunistic navigation tools, puzzle solving, treasure collecting, and special objectives.</p>
-                  <p>The difficulty of each area varied depending on the place in relation to objectives, which was integrated contextually into the worldbuilding.</p>
-                  <p>Players must both break into a vault in the mansion that requires a key from the back garden and find a doll in the abandoned house past the mansion. These objectives lead the player to all four major areas of the level.</p>
-                  <p>Optional objectives include finding a bulb in order to get the island's lighthouse back on and finding a rare navigation globe in one of the attics.
+                  <p>The primary objective, stealing the Eye, can be split into three main parts. First the player must gain access to the house, then the player must gain access to the temple, and finally the player must go
+                    through the temple and solve a puzzle to reach and steal the Eye.</p>
+                  <p>Optional objectives include finding a light bulb in order to get the island's lighthouse back on and finding a rare navigation globe in one of the attics.
                     Per Thief convention, players are also incentivized to find as many small loot items as they can.</p>
+                  <p>One of the major dynamic moments is that when the player steals the Eye, invulnerable ghost enemies appear and kill the pirates, replacing them and posing a greater challenge.
+                    The player gets to see the nearest pirates in-fight with the ghosts, but those off-screen are killed via trigger to avoid edge cases.</p>
+                  <p>The second major dynamic change is a secret passageway in the library that leads the player to the generator room, who's door is otherwise blocked from the inside by a servant who survived the raid.
+                    In here, the player can disable the generator, killing all electric lights in the level and giving the player an advantage in stealth.
+                  </p>
+                  <p>As a special interactive treat, there's a fully playable minigolf course in the vacation home.
+                    The equivalent to the traditional windmill is <a href="https://thief.fandom.com/wiki/Angelwatch" target="_blank">Angelwatch</a>, a key location from the original game.</p>
                   <h3>Narrative and Hooks</h3>
-                  <p>The player is a thief hired by the Keeper order to obtain an artifact called the Eye of the Sea from an island temple.
+                  <p>The player is a thief hired by the Keepers to obtain an artifact called the Eye of the Sea from an island temple.
                     Lord Gideon, a navyman who conqueored the island years before but failed to find the Eye,
                     has built his vacation home around the temple. When the player arrives, they are meant to meet with an agent in the village below, but find the island being actively raided by a crew of pirates.</p>
                   <p>Through readables and environmental storytelling, the player is able to piece together the rest of the story,
                     which involves a dark sea god's eye having been stolen by the islanders' ancestors and a corrupted crew of the
-                    expeditionary navy (the afformentioned pirates) having been cursed to return the Eye to its owner.</p>
+                    expeditionary navy (the afformentioned pirates) having been cursed to return the Eye to its owner. The Keepers have sent you to make sure that doesn't happen.</p>
                   <p><b>The narrative features hooks that explore the fantasy of being a master thief:</b>
                     <ul>
                       <li>1. The player gets to connect with Thief's underworld by sneaking into the village and searching for their contact.</li>
                       <li>2. The player is a better thief than the pirates. They resort to stealth, require less assistance, and they may not even need to use violence to obtain the Eye.
-                        There is also a puzzle in the temple that the pirates are unable to solve, while the player is.</li>
+                        There is also a puzzle in the temple that the pirates are unable to solve, but the player is.</li>
                       <li>3. The player is an uninformed pawn in a larger conflict and gets to overcome this by putting together the clues of the story themselves.</li>
                     </ul>
                   </p>
                   <h3>Playtesting</h3>
                   <p>Throughout the course of this project, I had twelve different testers. Testers included other level designers, long-time Thief fans, and a few people newer to Thief.</p>
                   <p>Having testers with varying experience gave me access to a wider variety of feedback. Testers were introduced at different stages of 
-                  development to ensure I regularly had players going in blind. I observed every gameplay test and took detailed notes.</p>
-                  <p>The difficulty of the level was ultimately crafted around the long-time Thief fans, as in a modding scene like this,
+                  development to ensure I regularly had players going in blind. I observed gameplay tests and took detailed notes, which I would then filter
+                  into action items to complete before another round of testing.</p>
+                  <p>The difficulty of the level was ultimately crafted around the long-time Thief fans as
                     they best represented my practical playerbase upon release. Several were vital to the final rounds of QA testing as
                     they were well qualified to find exploits and bugs.</p>
 
                 </div>
-
-                <div class="col-md-6" style="padding-bottom: calc(var(--bs-gutter-x));">
-                  <figure>
-                    <iframe class="card-img link-img width="560" height="315" src="https://www.youtube.com/embed/kU2NNEhpn1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <figcaption>Brief demonstration of one of the puzzles in the level.</figcaption>
-                  </figure>       
-                </div>
-                <div class="col-md-6" style="padding-bottom: calc(var(--bs-gutter-x));">
-                  <figure>
-                    <iframe class="card-img link-img" width="560" height="315" src="https://www.youtube.com/embed/jBVsuilULzc?start=27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <figcaption>A full, blind playthrough from a Thief YouTuber.</figcaption>
-                  </figure>
-
-              </div>
-
             </div>
           </div>
         </div>
