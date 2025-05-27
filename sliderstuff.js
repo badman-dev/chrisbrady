@@ -1,81 +1,84 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const container = document.querySelector(".custom-image-slider");
-    const afterImage = document.querySelector(".slider-after");
-    const handle = document.querySelector(".slider-handle");
+    const containers = document.querySelectorAll(".custom-image-slider");
 
-    // Set initial handle position and clipPath
-    const initialPercentage = 75;
-    handle.style.left = `${initialPercentage}%`;
-    afterImage.style.clipPath = `inset(0 ${100 - initialPercentage}% 0 0)`;
+    containers.forEach(container => {
+      const afterImage = container.querySelector(".slider-after");
+      const handle = container.querySelector(".slider-handle");
 
-    let dragging = false;
-    let lastX = 0;
+      // Set initial handle position and clipPath
+      const initialPercentage = 75;
+      handle.style.left = `${initialPercentage}%`;
+      afterImage.style.clipPath = `inset(0 ${100 - initialPercentage}% 0 0)`;
 
-    // Add mouse event listeners
-    handle.addEventListener("mousedown", (e) => {
-      dragging = true;
-      lastX = e.clientX;
-      e.preventDefault();
-    });
+      let dragging = false;
+      let lastX = 0;
 
-    document.addEventListener("mouseup", () => {
-      dragging = false;
-    });
-
-    document.addEventListener("mouseleave", () => {
-      dragging = false;
-    });
-
-    document.addEventListener("mousemove", (e) => {
-      if (!dragging) return;
-
-      const rect = container.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      let widthPercentage = (x / rect.width) * 100;
-
-      // Add constraint to keep the handle within 1% of either edge
-      widthPercentage = Math.max(0, Math.min(widthPercentage, 100));
-
-      // Update handle position using requestAnimationFrame
-      window.requestAnimationFrame(() => {
-        handle.style.left = `${widthPercentage}%`;
-        afterImage.style.clipPath = `inset(0 ${100 - widthPercentage}% 0 0)`;
+      // Add mouse event listeners
+      handle.addEventListener("mousedown", (e) => {
+        dragging = true;
+        lastX = e.clientX;
+        e.preventDefault();
       });
 
-      lastX = x;
-    });
+      document.addEventListener("mouseup", () => {
+        dragging = false;
+      });
 
-    // Add touch event listeners
-    handle.addEventListener("touchstart", (e) => {
-      dragging = true;
-      lastX = e.touches[0].clientX;
-      e.preventDefault();
-    });
+      document.addEventListener("mouseleave", () => {
+        dragging = false;
+      });
 
-    document.addEventListener("touchend", () => {
-      dragging = false;
-    });
+      document.addEventListener("mousemove", (e) => {
+        if (!dragging) return;
 
-    container.addEventListener("touchcancel", () => {
-      dragging = false;
-    });
+        const rect = container.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        let widthPercentage = (x / rect.width) * 100;
 
-    container.addEventListener("touchmove", (e) => {
-      if (!dragging) return;
+        // Add constraint to keep the handle within 1% of either edge
+        widthPercentage = Math.max(0, Math.min(widthPercentage, 100));
 
-      const rect = container.getBoundingClientRect();
-      const x = e.touches[0].clientX - rect.left;
-      let widthPercentage = (x / rect.width) * 100;
-
-      // Add constraint to keep the handle within 1% of either edge
-      widthPercentage = Math.max(0, Math.min(widthPercentage, 100));
-
-      // Update handle position using requestAnimationFrame
-      window.requestAnimationFrame(() => {
-        handle.style.left = `${widthPercentage}%`;
-        afterImage.style.clipPath = `inset(0 ${100 - widthPercentage}% 0 0)`;
+        // Update handle position using requestAnimationFrame
+        window.requestAnimationFrame(() => {
+          handle.style.left = `${widthPercentage}%`;
+          afterImage.style.clipPath = `inset(0 ${100 - widthPercentage}% 0 0)`;
         });
 
-      lastX = x;
+        lastX = x;
+      });
+
+      // Add touch event listeners
+      handle.addEventListener("touchstart", (e) => {
+        dragging = true;
+        lastX = e.touches[0].clientX;
+        e.preventDefault();
+      });
+
+      document.addEventListener("touchend", () => {
+        dragging = false;
+      });
+
+      container.addEventListener("touchcancel", () => {
+        dragging = false;
+      });
+
+      container.addEventListener("touchmove", (e) => {
+        if (!dragging) return;
+
+        const rect = container.getBoundingClientRect();
+        const x = e.touches[0].clientX - rect.left;
+        let widthPercentage = (x / rect.width) * 100;
+
+        // Add constraint to keep the handle within 1% of either edge
+        widthPercentage = Math.max(0, Math.min(widthPercentage, 100));
+
+        // Update handle position using requestAnimationFrame
+        window.requestAnimationFrame(() => {
+          handle.style.left = `${widthPercentage}%`;
+          afterImage.style.clipPath = `inset(0 ${100 - widthPercentage}% 0 0)`;
+          });
+
+        lastX = x;
+      });
     });
 });
