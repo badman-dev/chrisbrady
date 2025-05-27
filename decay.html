@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="css/sliderstuff.css">
     <link rel="stylesheet" href="css/modalstuff.css">
     <link rel="stylesheet" href="css/index.css">
 
@@ -21,7 +22,7 @@
   <body>
     <header>
       <section class="jumbotron text-center">
-        <img class="d-block w-100" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 1em;" src="images/decay/earlypreview.jpg" alt="First slide">
+        <img class="d-block w-100" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 1em;" src="images/hoa/hoabanner.jpg" alt="First slide">
         <a href="https://badman-dev.github.io/chrisbrady/"><h1 style="color: black; display: inline-block; font-size: 3rem;" class="jumbotron-heading">Chris Brady</h1></a>
         <ul class="horizontal-navbar">
           <li><a href="index.html">Portfolio</a></li>
@@ -55,16 +56,106 @@
               <div class="row">
                 <div class="col-md-6 page-header" style="padding-bottom: calc(var(--bs-gutter-x));">
                     <h2>Decay Chain</h2>
-                    <h3>Half-Life: Alyx</h3>
-                    <p><strong>VR, FPS, Scavenging, Spiral Layout<br/>Work in Progress</strong></p>
-                    <p>I am actively working on a feature-complete level for Half-Life: Alyx with an estimated playtime of 30 minutes.</p>
-                    <p>A larger breakdown of my work will be available here once the map is publicly released.
-                      I'm eagerly looking for playtesters on this one, so please reach out if you're interested!</p>
+                    <h3>Half-Life: Alyx map</h3>
+                    <p><strong>VR, FPS, Puzzles, Scavenging, Setpieces, Spiral Layout<br/>3 Month Solo Project<br/>Released May 25th, 2025</strong></p>
+                    <p>Decay Chain is a 0.5-1 hour level for Half-Life: Alyx in which the player infiltrates a single block of City 17 in order to disable a Combine Substation.</p>
+                    <p>The level is constructed intimately around a series of setpieces that utlize and remix mechanics from the original game in new ways.</p>
+                    <p>Download on the Steam Workshop <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3487745773" target="_blank">here</a>.</p>
+                  </div>
+                <div class="col-md-6" style="padding-bottom: calc(var(--bs-gutter-x));">
+                  <figure>
+                  <iframe class="card-img link-img" width="560" height="315" src="https://www.youtube.com/embed/F8OTYWKytjM?si=O2OZwE-mP9mUdyOT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <figcaption>A full playthrough of a version just prior to release (visuals and bugs nonfinal)</figcaption>
+                  </figure>
+                </div>
+
+                <div class="col-md-12" style="padding-bottom: calc(var(--bs-gutter-x)); margin: auto; max-width: 1296px;">
+                  <img id="myImg" class="modal-image" src="images/decay/img1.jpg" style="height: 318px; width: 318px;">
+                  <img id="myImg" class="modal-image" src="images/decay/img2.jpg" style="height: 318px; width: 318px;">
+                  <img id="myImg" class="modal-image" src="images/decay/img3.jpg" style="height: 318px; width: 318px;">
+                  <img id="myImg" class="modal-image" src="images/decay/img4.jpg" style="height: 318px; width: 318px;">
+                  <img id="myImg" class="modal-image" src="images/decay/img5.jpg" style="height: 318px; width: 318px;">
+                  <img id="myImg" class="modal-image" src="images/decay/img6.jpg" style="height: 318px; width: 318px;">
+                  <img id="myImg" class="modal-image" src="images/decay/img7.jpg" style="height: 318px; width: 318px;">
+                  <img id="myImg" class="modal-image" src="images/decay/img8.jpg" style="height: 318px; width: 318px;">
+                </div>
+    
+                <div class="col-md-6" style="padding-bottom: calc(var(--bs-gutter-x));">
+                    <figure>
+                      <img class="card-img link-img" src="images/hoa/hoagif1.webp" style="height: auto;">
+                      <figcaption>The player discovers they are being watched and eventually returns home.</figcaption>
+                    </figure>
+                    <figure>
+                      <img class="card-img link-img" src="images/hoa/hoagif2.webp" style="height: auto;">
+                      <figcaption>The player thwarts an ambush and clears a path.</figcaption>
+                    </figure>
+                    <figure>
+                      <img class="card-img link-img" src="images/hoa/hoagif3.webp" style="height: auto;">
+                      <figcaption>A carefully thrown grenade clears turrets ahead.</figcaption>
+                    </figure>
+                    <figure>
+                      <img class="card-img link-img" src="images/hoa/hoagif4.webp" style="height: auto;">
+                      <figcaption>The player improvises as new enemies fly into the room.</figcaption>
+                    </figure>
+                    <figure>
+                      <style>
+                        .slider-before, .slider-after {
+                          user-select: none;
+                        }
+                      </style>
+                      
+                      <div class="custom-image-slider" id="customImageSlider">
+                        <img class="slider-before" src="images/hoa/before1b.jpg" alt="Before" style="height: auto;">
+                        <img class="slider-after" src="images/hoa/before1a.jpg" alt="After" style="height: auto;">
+                        <div class="slider-handle"></div>
+                      </div>
+                      <figcaption>What the player sees VS actual playable level geometry.</figcaption>
+                    </figure>
                 </div>
                 <div class="col-md-6" style="padding-bottom: calc(var(--bs-gutter-x));">
-                    <img class="card-img link-img round-image" src="images/decay/earlyeditorpreview.jpg" style="height: auto;">
+                  <h2>Design</h2>
+                  <p>For the "surprise" concept of the jam, I created a level built around an initial plot twist that explodes into FPS action. The twist, inspired by the <a href="https://youtu.be/GLExoItBLVc?si=ZsXYk6N49CL3eikE&t=954" target="_blank">intro to Arkane's Prey</a>, is
+                    that the fully 3D suburb visible around the player's home is fake, and they are instead being watched through one-way glass by the inhabitants of a massive sci-fi facility.
+                  </p>
+                  <p>I didn't paper draft the layout prior to implementation, however I did originally plan the level in written format by detailing the sequence of events that the player experiences. 
+                  </p>
+                  <p>The level was playtested by three other level designers and another three friends familiar with Half-Life 2 over multiple versions. Testers submitted videos that I was able to watch to observe player behavior.
+                    The level underwent a wide variety of changes, both big and small, in response to this playtesting.
+                  </p>
+                  <p>You can see my original plan and testing notes <a href="https://docs.google.com/document/d/1uyDbKHb4RqeuaL7erqvQwgqlDbhmrvGNKcGyVh0COOc/edit?usp=sharing" target="_blank">here</a>.</p>
+                  <h3>Mounted Gun Defense</h3>
+                  <p>The player discovers a decaying wall placed in the sights of a grenade-launching mounted gun.
+                    Finding the gun unpowered, the player solves an environmental puzzle to obtain a battery.
+                    Returning to the gun, a Combine truck pulls up and the player takes position.
+                  </p>
+                  <p>Enemies pool in through a gate, split in a way so as to make it impossible for players to spam grenades into them both at once. Additionally, Combine appear in windows slightly to the side to split the player's attention.</p>
+                  <p>Attacking enemies are scripted to utilize different paths. If the player is not attentive to taking care of enemies, they will be shot at from multiple directions, limiting the usefulness of the gun's front facing shield.</p>
+                  <p>Once the player is comfortable with fighting combine soldiers, small flying enemies, manhacks, emerge. Harder to hit with the gun, the player is likely forced to change approach and use both their mounted gun and hand pistol in the encounter's finale.
+                  </p>
+                  <p>After dispatching the attack, the player blows open the decaying wall and proceeds on foot into a dark tunnel.</p>
+                  <h3>Circuit Puzzle with Zombie Juggling</h3>
+                  <p>As they encounter an unpowered elevator, the player finds themselves in a room with a series of locked storage rooms and a circuit puzzle.</p>
+                  <p>As the player adjusts circuits to lead power back to the elevator,
+                    they are secondarily challenged with not opening any doors that lead to zombies, who have been herded into two of the stalls.</p>
+                  <p><b>The puzzle is set up to incentivize and suggest this challenge to players without forcing their hands:</b>
+                    <ul>
+                      <li>Before starting the puzzle, the player can see the contents of every room.</li>
+                      <li>The first door is easy to open by mistake, but contains loot and no zombies. This teaches the relationship between the circuit and the doors</li>
+                      <li>The second door contains a small number of zombies but no loot, leaving an impression on players concerned with ammo management.</li>
+                      <li>Opening the third door requires the player to temporarily divert power from the golden path and contains the most loot and no enemies.</li>
+                      <li>The fourth door contains a larger number of zombies, a punishment for players who have not been paying attention.</li>
+                      <li>The opening of all doors can be avoided if the player checks a junction before powering it, but by default the zombie doors are set to open when the previous junction is powered.</li>
+                    </ul></p>
+                  <p>Playtesting saw satisfactory results, with a small majority of players intuiting the optional challenge and passing with flying colors.
+                    The rest did not intuit it or simply enjoyed combat so much that they wanted to fight the zombies. Were this a base game inclusion, success would be perfect for an achievement.</p>
+                  <h3>Elevator Turret</h3>
+                  <p>The player begins ascending a spiral staircase when an alarm goes off and a turret jurryrigged into the center elevator mechanisms begins alternating up and down, shooting at the player.</p>
+                  <p>The player must time their movement between cover in order to avoid taking hits. Part-way up, Combine soldiers appear that the player must fight at the same time.</p>
+                  <p>When the player kills all soldiers and reaches the top, they can press a button on a terminal to disable the turret. The player must then hack this same terminal to proceed through a gate.</p>
+                  <p>Once the player begins hacking, their attention is drawn to a nearby monitor showing more combine soldiers preparing an attack in the stairwell below. Upon completing the hack, the turret reenables, but now fires upon the combine soldiers, rapidly dispensing of them.</p>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -83,6 +174,7 @@
       </footer>
 
       <script src="modalstuff.js"></script>
+      <script src="sliderstuff.js"></script>
 
   </body>
 </html>
