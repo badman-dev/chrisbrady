@@ -56,7 +56,7 @@
               <div class="row">
                 <div class="col-md-6 page-header" style="padding-bottom: calc(var(--bs-gutter-x));">
                     <h2>Decay Chain</h2>
-                    <h3>Half-Life: Alyx map</h3>
+                    <h3>Half-Life: Alyx</h3>
                     <p><strong>VR, FPS, Puzzles, Scavenging, Setpieces, Spiral Layout<br/>3 Month Solo Project<br/>Released May 25th, 2025</strong></p>
                     <p>Decay Chain is a 0.5-1 hour level for Half-Life: Alyx in which the player infiltrates a single block of City 17 in order to disable a Combine Substation.</p>
                     <p>The level is constructed intimately around a series of setpieces that utlize and remix mechanics from the original game in new ways.</p>
@@ -84,7 +84,7 @@
                     </figure>
                     <figure>
                       <img class="card-img link-img" src="images/decay/decay2.webp" style="height: auto;">
-                      <figcaption>The player fires at enemies on several sides.</figcaption>
+                      <figcaption>The player fires the mounted gun at enemies on several sides.</figcaption>
                     </figure>
                     <figure>
                       <style>
@@ -123,10 +123,12 @@
                 </div>
                 <div class="col-md-6" style="padding-bottom: calc(var(--bs-gutter-x));">
                   <h2>Design</h2>
-                  <p>Decay Chain is structured as a condensed version of Half-Life: Alyx's gameplay loop, quickly navigating the player between scavenging, puzzle solving, and explosive setpieces.</p>
+                  <p>Decay Chain is structured with a condensed version of Half-Life: Alyx's gameplay loop, quickly navigating the player between scavenging, puzzle solving, and explosive setpieces.</p>
                   <p>The level was playtested as early as I had a playable blockout, which I iterated upon several times before release.
                     Playtester entry was staggered between versions to ensure I regularly had fresh eyes on it.</p>
-                  <p>Following playtesting, the level was fully polished to include art, audio, and additional scripting.</p>
+                  <p>Following playtesting, the level was fully polished to include art, audio, and additional scripting and interactions.</p>
+                  <p>The level features a spiral shaped layout that wraps around itself. The player's goal is an often seen substation suspended atop an apartment building,
+                    but their path to it involves neighboring buildings and subterranean service tunnels.</p>
                   <p>For brevity, this page will only break down the three most interesting setpieces, but nuance and iteration went into every part of the level</p>
                   <h3>Mounted Gun Defense</h3>
                   <p><a href="https://youtu.be/RyE_fIbL1Bo?si=OAhJf8K2cPh7PD4j&t=870" target="_blank">Video Timestamp</a></p>
@@ -136,32 +138,33 @@
                   </p>
                   <p>Enemies pool in through a gate, split in a way so as to make it impossible for players to spam grenades into them both at once. Additionally, Combine appear in windows slightly to the side to split the player's attention.</p>
                   <p>Attacking enemies are scripted to utilize different paths. If the player is not attentive to taking care of enemies, they will be shot at from multiple directions, limiting the usefulness of the gun's front facing shield.</p>
-                  <p>Once the player is comfortable with fighting combine soldiers, small flying enemies, manhacks, emerge. Harder to hit with the gun, the player is likely forced to change approach and use both their mounted gun and hand pistol in the encounter's finale.
+                  <p>Once the player is comfortable with fighting combine soldiers small flying enemies, called manhacks, emerge. Harder to hit with the gun, the player is likely forced to change approach and use both their mounted gun and hand pistol in the encounter's finale.
                   </p>
                   <p>After dispatching the attack, the player blows open the decaying wall and proceeds on foot into a dark tunnel.</p>
                   <h3>Circuit Puzzle with Zombie Juggling</h3>
                   <p><a href="https://youtu.be/RyE_fIbL1Bo?si=dz9j6qBvqAibXOBJ&t=1131" target="_blank">Video Timestamp</a></p>
-                  <p>As they encounter an unpowered elevator, the player finds themselves in a room with a series of locked storage rooms and a circuit puzzle.</p>
+                  <p>The player encounters an unpowered elevator, finding themselves in a room with a series of locked storage rooms and a circuit puzzle.</p>
                   <p>As the player adjusts circuits to lead power back to the elevator,
                     they are secondarily challenged with not opening any doors that lead to zombies, who have been herded into two of the stalls.</p>
                   <p><b>The puzzle is set up to suggest and incentivize this challenge to players without forcing their hands:</b>
                     <ul>
                       <li>Before starting the puzzle, the player can see the contents of every room.</li>
                       <li>The first door is easy to open by mistake, but contains loot and no zombies. This teaches the relationship between the circuit and the doors</li>
-                      <li>The second door contains a small number of zombies but no loot, leaving an impression on players concerned with ammo management.</li>
+                      <li>The second door contains a small number of zombies but no loot, acting as educational punishment to the player's resources.</li>
                       <li>Opening the third door requires the player to temporarily divert power from the golden path and contains the most loot and no enemies.</li>
                       <li>The fourth door contains a larger number of zombies, a punishment for players who have not been paying attention.</li>
                       <li>The opening of all doors can be avoided if the player checks a junction before powering it, but by default the zombie doors are set to open when the previous junction is powered.</li>
                     </ul></p>
                   <p>Playtesting saw satisfactory results, with a small majority of players intuiting the optional challenge and passing with flying colors.
-                    The rest did not intuit it or simply enjoyed combat so much that they wanted to fight the zombies. Were this a base game inclusion, success would be perfect for an achievement.</p>
+                    The rest did not intuit it or simply enjoyed combat so much that they wanted to fight the zombies.
+                    Were this a base game inclusion, perfect success would be a perfect opportunity for an achievement.</p>
                   <h3>Elevator Turret</h3>
                   <p><a href="https://youtu.be/RyE_fIbL1Bo?si=jMh4Fe9uT-nmtvX3&t=1490" target="_blank">Video Timestamp</a></p>
-                  <p>The player begins ascending a spiral staircase when an alarm goes off and a turret jury rigged into the center elevator mechanisms begins alternating up and down, shooting at the player.</p>
+                  <p>The player begins ascending a spiral staircase when an alarm goes off and a turret, jury rigged into the center elevator mechanisms, begins alternating up and down, shooting at the player.</p>
                   <p>The player must time their movement between cover in order to avoid taking hits. Part-way up, Combine soldiers appear that the player must fight at the same time.</p>
                   <p>When the player kills all soldiers and reaches the top, they can press a button on a terminal to disable the turret. The player must then hack this same terminal to proceed through a gate.</p>
                   <p>Once the player begins hacking, their attention is drawn to a nearby monitor showing more combine soldiers preparing an attack in the stairwell below. Upon completing the hack, the turret reenables, but now fires upon the combine soldiers, rapidly dispensing of them.</p>
-                  <p>Originally, I attempted forcing the player to rely on physics-based cover, such as plywood, but playtesters found this more annoying than exciting, so now players primarily utilize a mix of opaque and transparent static cover.
+                  <p>Originally, I attempted forcing the player to rely on physics-based cover, such as sheet metal, but playtesters found this more annoying than exciting, so now players primarily utilize a mix of opaque and transparent static cover.
                     Physics props remain to deliver a sense of mayhem as they fly around and get shot, but they have little gameplay impact.
                   </p>
                 </div>
